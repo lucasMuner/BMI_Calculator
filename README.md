@@ -1,4 +1,4 @@
-# Calculadora de Índice de Massa Corporal - Projeto Flutter
+# Calculadora de Índice de Massa Corporal - Projeto Flutter (Em Desenvolvimento)
 
 Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que calcula o Índice de Massa Corporal (IMC) com base no peso e na altura fornecidos pelo usuário.
 
@@ -7,6 +7,7 @@ Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que ca
 
 ## Recursos e Widgets Utilizados
 
+## Alguns Recursos e Widgets Utilizados
 - **Scaffold**: Widget utilizado para criar a estrutura básica da aplicação.
 - **AppBar**: Widget para exibir a barra superior com o título do aplicativo.
 - **Column**: Widget utilizado para organizar os elementos verticalmente.
@@ -14,6 +15,13 @@ Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que ca
 - **ElevatedButton**: Widget de botão que responde ao toque do usuário para calcular o IMC.
 - **Text**: Widget para exibir o resultado do cálculo do IMC.
 - **StatefulWidget**: Classe base para widgets que têm estado mutável.
+- **StatelessWidget**: Classe base para widgets que têm estado imutável.
+- **Row**: Widget utilizado para organizar os elementos horizontalmente.
+- **Container**: Widget utilizado para criar caixas retangulares com capacidade de estilização.
+- **Icon**: Widget para exibir ícones na interface do usuário.
+- **GestureDetector**: Widget utilizado para detectar gestos do usuário, como toques, arrastos e gestos de rolagem.
+- **Expanded**: Widget utilizado dentro de uma linha ou coluna para expandir seu filho para preencher o espaço disponível.
+
 
 ## Classes do Projeto
 - **Constants**: Contém todas as constantes utilizadas no projeto.
