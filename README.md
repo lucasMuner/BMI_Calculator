@@ -5,8 +5,6 @@ Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que ca
 ## Capturas de tela
 ![Tela Inicial](tela/tela_inicial.png)
 
-## Recursos e Widgets Utilizados
-
 ## Alguns Recursos e Widgets Utilizados
 - **Scaffold**: Widget utilizado para criar a estrutura básica da aplicação.
 - **AppBar**: Widget para exibir a barra superior com o título do aplicativo.
