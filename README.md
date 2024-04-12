@@ -1,4 +1,4 @@
-# Calculadora de Índice de Massa Corporal - Projeto Flutter (Em Desenvolvimento)
+# Calculadora de Índice de Massa Corporal - Projeto Flutter
 
 Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que calcula o Índice de Massa Corporal (IMC) com base no peso e na altura fornecidos pelo usuário.
 
