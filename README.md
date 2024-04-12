@@ -3,8 +3,8 @@
 Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que calcula o Índice de Massa Corporal (IMC) com base no peso e na altura fornecidos pelo usuário.
 
 ## Capturas de tela
-![Tela Inicial](tela/tela_inicial.png)
-![Tela Inicial](tela/tela_resultado.png)
+![Tela Inicial](tela/tela_inic.png)
+![Tela Resultado](tela/tela_resultado.png)
 
 ## Alguns Recursos e Widgets Utilizados
 - **Scaffold**: Widget utilizado para criar a estrutura básica da aplicação.
