@@ -1,8 +1,12 @@
+import 'package:bmi_calculator/resultScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'bottomButton.dart';
+import 'calculator_brain.dart';
 import 'constants.dart';
 import 'custom_card.dart';
+import 'iconButton.dart';
 import 'icon_content.dart';
 
 enum Gender { Masculino, Feminino }
@@ -16,6 +20,8 @@ class _InputPageState extends State<InputPage> {
   int cardColorMale = colorCardActive;
   int cardColorFemale = colorCardActive;
   int height = 180;
+  int age = 20;
+  int weight = 60;
 
   void changeStateCard(Gender gender) {
     gender == Gender.Masculino && cardColorMale == colorCardActive
@@ -140,7 +146,42 @@ class _InputPageState extends State<InputPage> {
                     margin: marginCard,
                     color: colorCardActive,
                     borderRad: borderRadCard,
-                    cardChild: Container(),
+                    cardChild: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
+                          'PESO',
+                          style: kLabelTextStyle,
+                        ),
+                        Text(
+                          weight.toString(),
+                          style: kNumberTextStyle,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            RoundIconButton(
+                                icon: FontAwesomeIcons.minus,
+                                onPressed: () {
+                                  setState(() {
+                                    weight--;
+                                  });
+                                }),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            RoundIconButton(
+                              icon: FontAwesomeIcons.plus,
+                              onPressed: () {
+                                setState(() {
+                                  weight++;
+                                });
+                              },
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
@@ -148,17 +189,65 @@ class _InputPageState extends State<InputPage> {
                     margin: marginCard,
                     color: colorCardActive,
                     borderRad: borderRadCard,
-                    cardChild: Container(),
+                    cardChild: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
+                          'IDADE',
+                          style: kLabelTextStyle,
+                        ),
+                        Text(
+                          age.toString(),
+                          style: kNumberTextStyle,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            RoundIconButton(
+                              icon: FontAwesomeIcons.minus,
+                              onPressed: () {
+                                setState(
+                                  () {
+                                    age--;
+                                  },
+                                );
+                              },
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            RoundIconButton(
+                                icon: FontAwesomeIcons.plus,
+                                onPressed: () {
+                                  setState(() {
+                                    age++;
+                                  });
+                                })
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(top: marginCard),
-            color: Colors.red,
-            width: double.infinity,
-            height: bottomContainerHeight,
+          BottomButton(
+            buttonTitle: 'CALCULAR',
+            onTap: () {
+              CalculatorBrain calc = CalculatorBrain(height, weight);
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ResultScreen(
+                    bmiResults: calc.calculateBmi(),
+                    resultText: calc.getResult(),
+                    interpretation: calc.getInterpretation(),
+                  ),
+                ),
+              );
+            },
           ),
         ],
       ),
