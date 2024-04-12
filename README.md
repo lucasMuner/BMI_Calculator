@@ -26,7 +26,12 @@ Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que ca
 - **IconContent**: Widget responsável por criar os ícones masculino e feminino junto com seus respectivos nomes.
 - **CustomCard**: Classe para criar cards customizados utilizados na interface do aplicativo.
 - **InputPage**: Classe que monta a estrutura principal do aplicativo.
-- **main**: Classe responsável por inicializar o aplicativo Flutter, configurando a aparência e a estrutura iniciais.
+- **ResultScreen**: Tela de resultados.
+- **main**: Classe responsável por inicializar o aplicativo Flutter.
+- **MainScreen**: Tela inicial.
+- **BottomButton**: Classe para criação do botão na parte de baixo do aplicativo.
+- **IconButton**: Classe que cria os botões de decrementar e incrementar.
+- **CalculatorBrain**: Classe que faz os cálculos de BMI.
 
 ## Como Executar
 1. Certifique-se de ter o ambiente de desenvolvimento Flutter configurado corretamente em seu sistema.
