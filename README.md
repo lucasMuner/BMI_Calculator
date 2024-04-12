@@ -4,6 +4,7 @@ Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que ca
 
 ## Capturas de tela
 ![Tela Inicial](tela/tela_inicial.png)
+![Tela Inicial](tela/tela_resultado.png)
 
 ## Alguns Recursos e Widgets Utilizados
 - **Scaffold**: Widget utilizado para criar a estrutura básica da aplicação.
@@ -19,7 +20,6 @@ Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que ca
 - **Icon**: Widget para exibir ícones na interface do usuário.
 - **GestureDetector**: Widget utilizado para detectar gestos do usuário, como toques, arrastos e gestos de rolagem.
 - **Expanded**: Widget utilizado dentro de uma linha ou coluna para expandir seu filho para preencher o espaço disponível.
-
 
 ## Classes do Projeto
 - **Constants**: Contém todas as constantes utilizadas no projeto.
@@ -38,4 +38,3 @@ Este projeto consiste em uma aplicação simples desenvolvida em Flutter, que ca
 
 ## Autor
 Lucas Muner Garcia
-
